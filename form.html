@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 20px;
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 320px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: teal;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkcyan;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/submit" method="post">
+    <h2>User Registration</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="fullname" placeholder="Enter full name" required autofocus>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter mail" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label>Interests:</label><br>
+    <input type="checkbox" name="interest" value="coding"> Coding
+    <input type="checkbox" name="interest" value="music"> Music
+    <input type="checkbox" name="interest" value="sports"> Sports<br><br>
+
+    <label for="city">Select City:</label>
+    <select id="city" name="city">
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="kolkata">Kolkata</option>
+      <option value="chennai">Chennai</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Submit Form">
+  </form>
+
+</body>
+</html>
