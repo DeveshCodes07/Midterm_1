@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 20px;
+        }
+
+        /* Logo text */
+        .logo{
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Nav menu list */
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Nav links style */
+        .nav-links li a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover{
+            background: #555;
+            border-radius: 5px;
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px){
+            .nav-links{
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #333;
+                padding: 15px;
+                width: 150px;
+                display: none;
+            }
+
+            .navbar.active .nav-links{
+                display: flex;
+            }
+
+            .menu-btn{
+                display: block;
+                color: white;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        }
+
+        /* Hidden on large screens */
+        .menu-btn{
+            display: none;
+        }
+    </style>
+
+    <script>
+        function toggleMenu(){
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Menu button for mobile -->
+        <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <!-- Google Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+        }
+        .form-container {
+            max-width: 390px;
+            background: #fff;
+            margin: 40px auto;
+            padding: 28px 22px 20px 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 14px rgba(100,100,130,0.08);
+        }
+        h2 {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+            color: #593a91;
+            font-weight: 600;
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 13px;
+        }
+        .form-row label {
+            width: 108px;
+            font-size: 13px;
+            color: #54456b;
+            margin-bottom: 0;
+            margin-right: 5px;
+        }
+        .input-with-icon {
+            position: relative;
+            width: 100%;
+        }
+        .input-with-icon i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aa9fd1;
+            font-size: 14px;
+        }
+        .input-with-icon input,
+        .input-with-icon select,
+        .input-with-icon textarea {
+            padding: 7px 10px 7px 30px;
+            border: 1px solid #e6e1fa;
+            border-radius: 4px;
+            background: #f7f7fc;
+            font-size: 13px;
+            outline: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .input-with-icon textarea {
+            min-height: 38px;
+            resize: vertical;
+        }
+        input[type="radio"] {
+            margin-right: 4px;
+            accent-color: #9079e4;
+        }
+        .inline-label {
+            margin-right: 12px;
+            font-size: 13px;
+            color: #786e91;
+            font-weight: 400;
+        }
+        button[type="submit"] {
+            background: #7a61d3;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: background .1s;
+        }
+        button[type="submit"]:hover {
+            background: #5341a7;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Contact Us Today!</h2>
+    <form>
+        <div class="form-row">
+            <label for="fname">First Name</label>
+            <div class="input-with-icon">
+                <i class="fa fa-user"></i>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="lname">Last Name</label>
+            <div class="input-with-icon">
+                <i class="fa fa-user"></i>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="email">E-Mail</label>
+            <div class="input-with-icon">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="E-Mail Address">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="phone">Phone #</label>
+            <div class="input-with-icon">
+                <i class="fa fa-phone"></i>
+                <input type="tel" id="phone" name="phone" placeholder="(845)555-1212">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="address">Address</label>
+            <div class="input-with-icon">
+                <i class="fa fa-home"></i>
+                <input type="text" id="address" name="address" placeholder="Address">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="city">City</label>
+            <div class="input-with-icon">
+                <i class="fa fa-city"></i>
+                <input type="text" id="city" name="city" placeholder="City">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="state">State</label>
+            <div class="input-with-icon">
+                <i class="fa fa-list"></i>
+                <select id="state" name="state">
+                    <option>Please select your state</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                    <option>Andaman and Nicobar Islands</option>
+                    <option>Chandigarh</option>
+                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option>Delhi</option>
+                    <option>Lakshadweep</option>
+                    <option>Puducherry</option>
+                    <option>Ladakh</option>
+                    <option>Jammu and Kashmir</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="zip">Zip Code</label>
+            <div class="input-with-icon">
+                <i class="fa fa-map-pin"></i>
+                <input type="text" id="zip" name="zip" placeholder="Zip Code">
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="website">Website</label>
+            <div class="input-with-icon">
+                <i class="fa fa-globe"></i>
+                <input type="text" id="website" name="website" placeholder="Website or domain name">
+            </div>
+        </div>
+        <div class="form-row" style="align-items: flex-start;">
+            <label>Do you have hosting?</label>
+            <input type="radio" id="hostingYes" name="hosting" value="Yes">
+            <label for="hostingYes" class="inline-label">Yes</label>
+            <input type="radio" id="hostingNo" name="hosting" value="No">
+            <label for="hostingNo" class="inline-label">No</label>
+        </div>
+        <div class="form-row">
+            <label for="project">Project Desc.</label>
+            <div class="input-with-icon">
+                <i class="fa fa-pencil-alt"></i>
+                <textarea id="project" name="project" placeholder="Project Description"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

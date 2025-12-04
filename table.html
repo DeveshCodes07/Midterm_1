@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Table</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 20px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .table-container{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        background: white;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 600px;
+    }
+
+    th, td{
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    th{
+        background: #4CAF50;
+        color: white;
+        font-size: 16px;
+    }
+
+    tr:nth-child(even){
+        background: #f2f2f2;
+    }
+
+    tr:hover{
+        background: #e1e1e1;
+    }
+
+    .btn{
+        padding: 6px 12px;
+        background: #2196F3;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .btn.delete{
+        background: #f44336;
+    }
+</style>
+</head>
+<body>
+
+<h2>Student Data (Responsive Table)</h2>
+
+<div class="table-container">
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Web Dev</td>
+        <td>90</td>
+        <td>
+            <a href="#" class="btn">Edit</a>
+            <a href="#" class="btn delete">Delete</a>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Amy</td>
+        <td>Python</td>
+        <td>88</td>
+        <td>
+            <a href="#" class="btn">Edit</a>
+            <a href="#" class="btn delete">Delete</a>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Rick</td>
+        <td>Java</td>
+        <td>92</td>
+        <td>
+            <a href="#" class="btn">Edit</a>
+            <a href="#" class="btn delete">Delete</a>
+        </td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector Example</title>
+
+    <style>
+        /* Apply to ONLY direct child <p> of div */
+        div > p {
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid blue;
+            margin-bottom: 10px;
+        }
+
+        /* Normal paragraph to show difference */
+        p {
+            margin: 10px 0;
+        }
+
+        section {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h2>CSS Child Selector (>) Example</h2>
+
+    <div>
+        <p>This paragraph is a DIRECT child of div (Styled).</p>
+
+        <section>
+            <p>This paragraph is NOT a direct child of div (Not styled).</p>
+        </section>
+    </div>
+
+</body>
+</html>

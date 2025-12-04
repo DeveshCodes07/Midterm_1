@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Attribute Selectors Demo</title>
+
+<style>
+
+   
+    a[target] {
+        color: blue;
+        font-weight: bold;
+    }
+
+    
+    a[target="_blank"] {
+        color: green;
+    }
+
+    
+    a[href*="google"] {
+        background: yellow;
+    }
+
+   
+    a[href^="https"] {
+        border: 2px solid red;
+    }
+
+   
+    a[href$=".pdf"] {
+        color: purple;
+        text-decoration: underline;
+    }
+
+   
+    div[class~="box"] {
+        background: lightgreen;
+        padding: 10px;
+    }
+
+    
+    p[lang|="en"] {
+        color: orange;
+        font-style: italic;
+    }
+    a:hover{
+        opacity: 0.7;
+
+    }
+    h2:focus{
+        color: red;
+        
+    }
+
+</style>
+</head>
+<body>
+
+<h1>CSS Attribute Selectors Demo</h1>
+
+<h2>Links</h2>
+<p>
+    <a href="https://google.com" target="_blank">Google Link</a><br>
+    <a href="https://example.com" target="_self">Example HTTPS Link</a><br>
+    <a href="files/report.pdf" target="_blank">Download PDF</a><br>
+    <a href="http://yahoo.com" target="_top">Yahoo Link</a>
+</p>
+
+<h2>Div (class contains word)</h2>
+<div class="big box green">
+    This div has class "box"
+</div>
+
+<div class="small red">
+    No "box" here!
+</div>
+
+<h2>Paragraphs with language attribute</h2>
+<p lang="en">English paragraph</p>
+<p lang="en-US">English (US) paragraph</p>
+<p lang="fr">French paragraph</p>
+
+</body>
+</html>
