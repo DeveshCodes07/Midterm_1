@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Pseudo Elements Demo</title>
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. First Letter */
+p.demo::first-letter{
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+/* 2. First Line */
+p.demo::first-line{
+    color: purple;
+    font-weight: bold;
+}
+
+/* 3. Before Content */
+h1::before{
+    content: "👉 ";
+    color: blue;
+    font-weight: bold;
+}
+
+/* 4. After Content */
+h1::after{
+    content: " ✔";
+    color: green;
+    font-weight: bold;
+}
+
+/* 5. Placeholder */
+input::placeholder{
+    color: blue;
+    font-style: italic;
+}
+
+/* 6. Selection */
+::selection{
+    background: yellow;
+    color: black;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Pseudo Element Example</h1>
+
+<p class="demo">
+CSS pseudo-elements are used to style specific parts of an element. 
+They can be used to insert content, style letters, and much more.
+</p>
+
+<input type="text" placeholder="Enter your name">
+
+<p>Select some text to see selection effect.</p>
+
+</body>
+</html>

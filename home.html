@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            grid-template-rows: auto 1fr auto; 
+            height: 100vh;
+            background-color: rgb(117, 116, 115);
+        }
+
+        .navbar{
+            background-color: rgb(32, 32, 31);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .navbar a{
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+       
+        .main{
+            display: grid;
+            grid-template-columns: 200px 1fr; 
+        }
+
+        .sidebar{
+            background: rgb(78, 77, 76);
+            padding: 20px;
+        }
+
+        .sidebar a{
+            display: block;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content{
+            padding: 20px;
+        }
+
+        footer{
+            background-color: rgb(17, 17, 19);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+       
+        <div class="navbar">
+            <div class="logo">Logo</div>
+            <div class="nav-links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+
+        
+        <div class="main">
+
+           
+            <div class="sidebar">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </div>
+
+            
+            <div class="content">
+                <h1>Welcome to my home page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+        <footer>
+ <p>copyright 2024</p>
+        </footer>
+
+        
+           
+       
+    </div>
+
+</body>
+</html>
